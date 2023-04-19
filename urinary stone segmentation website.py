@@ -55,7 +55,7 @@ if option=='SECTION 1-Introduction':
     st.write('Hence a deep learning algorithm and a real time user interface has been developed. Urologists may be able to employ the proposed algorithm in real time for dynamic and effective segmentation of urinary stones to support their surgical and medical decision-making skills.')
 elif option=='SECTION 2-Deep learning tool for segmentation of urinary stones using ureteroscopy images':
     def load_model():
-        model=tf.keras.models.load_model(r"D:\medical datasets\urine stone seg model (2.9).h5",compile=False)
+        model=tf.keras.models.load_model(r"urine-stone-seg-model.h5",compile=False)
         return model
     with st.spinner('Model is being loaded..'):
         model=load_model()
