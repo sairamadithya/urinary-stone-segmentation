@@ -12,6 +12,8 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image, ImageOps
 import pandas as pd
 import numpy as np
+import os
+os.environ["SM_FRAMEWORK"] = "tf.keras"
 st.markdown(
          f"""
          <style>
